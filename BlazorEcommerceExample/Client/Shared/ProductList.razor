@@ -11,16 +11,16 @@ else
         {
            <li class="d-flex my-3 css-media-container"> @*media*@
                 <div class="flex-shrink-0 media-img-wrapper ms-2">
-                    <a href="#">
+                    <a href="/product/@product.Id">
                         <img class="media-img" src="@product.ImageUrl" alt="@product.Title">
                     </a>
                 </div>
                 <div class="flex-grow-1 ms-3"> @*media-body*@
-                    <a href="#"> @*RAZOR COMMENT: the # means SCROLL TO TOP*@
+                    <a href="/product/@product.Id"> @*RAZOR COMMENT: the # means SCROLL TO TOP*@
                         <h4 class="mb-0">@product.Title</h4>
                     </a>
                     <p>@product.Description</p>
-                    <h5 class="price">$€ @product.Price</h5>
+                    <h5 class="price">$@product.Price</h5>
                 </div>
             </li>
         }
