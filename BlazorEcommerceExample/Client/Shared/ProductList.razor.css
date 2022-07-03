@@ -24,6 +24,13 @@
     text-align: center;
 }
 
+@media (max-width: 1024.95px) {
+
+    .css-media-container {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 1023.98px) {
     .media {
         flex-direction: column;

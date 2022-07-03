@@ -9,20 +9,18 @@ else
     <ul class="list-unstyled">
         @foreach (var product in ProductService.Products)
         {
-            <li class="media my-3">
-                <div class="media-img-wrapper mr-2">
-                    <a href="/product/@product.Id">
-                        <img class="media-img" src="@product.ImageUrl" alt="@product.Title"/>
+           <li class="d-flex my-3 css-media-container"> @*media*@
+                <div class="flex-shrink-0 media-img-wrapper ms-2">
+                    <a href="#">
+                        <img class="media-img" src="@product.ImageUrl" alt="@product.Title">
                     </a>
                 </div>
-                <div class="media-body">
-                    <a href="/product/@product.Id">
+                <div class="flex-grow-1 ms-3"> @*media-body*@
+                    <a href="#"> @*RAZOR COMMENT: the # means SCROLL TO TOP*@
                         <h4 class="mb-0">@product.Title</h4>
                     </a>
                     <p>@product.Description</p>
-                    <h5 class="price">
-                        $@product.Price
-                    </h5>
+                    <h5 class="price">$€ @product.Price</h5>
                 </div>
             </li>
         }
