@@ -9,26 +9,10 @@
     .media-img:hover {
         transform: scale(1.1);
     }
-/*classes aviable in Bootstarp 4, but not 5*/
-.media {
-    display: flex;
-    align-items: flex-start;
-}
 
-.media-body { 
-    flex: 1;
-}
-/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 .media-img-wrapper {
     width: 200px;
     text-align: center;
-}
-
-@media (max-width: 1024.95px) {
-
-    .css-media-container {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 1023.98px) {
@@ -38,5 +22,9 @@
     .media-img-wrapper {
         width: 100%;
         height: auto;
+    }
+
+    .css-media-container {
+        flex-direction: column;
     }
 }
